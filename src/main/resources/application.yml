@@ -1,0 +1,25 @@
+server:
+  port: 8081
+
+resource-server:
+  client-id: lssClient
+  client-secret: lssSecret
+  token-info-uri: http://localhost:8083/oauth/check_token
+
+spring:
+  thymeleaf:
+    cache: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/testdb?createDatabaseIfNotExist=true&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+    username: testdb
+    password: testdb
+  # jpa:
+  #   hibernate:
+  #     ddl-auto: update
+
+security:
+  basic:
+    enabled: false
+  filter-order: 3
+

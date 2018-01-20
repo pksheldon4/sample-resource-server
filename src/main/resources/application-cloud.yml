@@ -1,0 +1,6 @@
+resource-server:
+  client-id: lssClient
+  client-secret: lssSecret
+  token-info-uri: https://auth-server.local.pcfdev.io/oauth/check_token
+security:
+  filter-order: 3

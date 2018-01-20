@@ -1,0 +1,10 @@
+---
+applications:
+- name: resource-server
+  memory: 512M
+  instances: 1
+  path: target/resource-server-0.0.1-SNAPSHOT.jar
+  services:
+  - userdb
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
