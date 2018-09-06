@@ -1,9 +1,9 @@
 ---
 applications:
-- name: resource-server
-  memory: 512M
+- name: resource-server-ps
+  memory: 768M
   instances: 1
-  path: target/resource-server-0.0.1-SNAPSHOT.jar
+  path: target/resource-server.jar
   services:
   - userdb
   env:
