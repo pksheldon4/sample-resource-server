@@ -4,7 +4,7 @@ server:
 resource-server:
   client-id: lssClient
   client-secret: lssSecret
-  token-info-uri: http://localhost:8083/oauth/check_token
+  token-info-uri: http://auth-server:8083/oauth/check_token
 
 spring:
   thymeleaf:
